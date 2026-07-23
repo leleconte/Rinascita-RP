@@ -1,0 +1,33 @@
+
+document.addEventListener("DOMContentLoaded",()=>{
+  requestAnimationFrame(()=>document.body.classList.add("page-ready"));
+
+  document.querySelectorAll("a[data-transition]").forEach(link=>{
+    link.addEventListener("click",event=>{
+      const href=link.getAttribute("href");
+      if(!href||href.startsWith("#")||href.startsWith("http"))return;
+      event.preventDefault();
+      document.body.classList.add("page-leaving");
+      setTimeout(()=>window.location.href=href,260);
+    });
+  });
+
+  const ruleButtons=[...document.querySelectorAll(".rule-button")];
+  const ruleContents=[...document.querySelectorAll(".rule-content")];
+  ruleButtons.forEach(button=>{
+    button.addEventListener("click",()=>{
+      const target=button.dataset.rule;
+      ruleButtons.forEach(b=>b.classList.toggle("active",b===button));
+      ruleContents.forEach(panel=>panel.classList.toggle("active",panel.id===target));
+    });
+  });
+
+  const parallax=document.querySelector(".city-card");
+  if(parallax){
+    window.addEventListener("mousemove",event=>{
+      const x=(event.clientX/window.innerWidth-.5)*8;
+      const y=(event.clientY/window.innerHeight-.5)*8;
+      parallax.style.transform=`translate3d(${x}px,${y}px,0)`;
+    });
+  }
+});
