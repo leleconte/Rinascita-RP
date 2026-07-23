@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0608"><meta name="description" content="Rinascita Roleplay, server FiveM ambientato a Roma con sistemi personalizzati."><title>Il Progetto · Rinascita Roleplay</title><link rel="stylesheet" href="assets/css/site.css"><noscript><style>body{opacity:1!important}</style></noscript></head>
+<body>
+<div class="site-shell" style="--page-bg:url('assets/img/server_3.png')">
+
+<header class="topbar">
+  <a class="brand" href="index.html" data-transition>
+    <img src="assets/img/logo_rrp.png" alt="Logo Rinascita Roleplay">
+    <span class="brand-copy"><small>ROMA · ITALIA</small><strong>RINASCITA ROLEPLAY</strong></span>
+  </a>
+  <nav class="main-nav"><a class="nav-link " href="index.html" data-transition>HOME</a>
+<a class="nav-link active" href="progetto.html" data-transition>IL PROGETTO</a>
+<a class="nav-link " href="sistemi.html" data-transition>SISTEMI CUSTOM</a>
+<a class="nav-link " href="regolamento.html" data-transition>REGOLAMENTO</a>
+<a class="nav-link " href="entra.html" data-transition>ENTRA IN CITTÀ</a></nav>
+  <div class="top-actions">
+    <a class="pill" href="#" data-discord>DISCORD</a>
+    <a class="pill" href="entra.html" data-transition>GIOCA ORA</a>
+  </div>
+</header>
+
+<main class="page single">
+  <section class="feature-stage">
+    <header class="page-title">
+      <div><small>IL PROGETTO</small><h1>Roma, senza compromessi.</h1></div>
+      <p>Non una semplice raccolta di script, ma un ecosistema coerente: ogni sistema comunica con gli altri e segue una sola identità visiva e funzionale.</p>
+    </header>
+    <div class="card-grid">
+      <article class="info-card"><span class="number">01</span><div><h3>Ambientazione romana</h3><p>Una città reinterpretata con riferimenti, linguaggio, atmosfere e ritmi ispirati a Roma.</p></div><footer><span>IDENTITÀ</span><span>→</span></footer></article>
+      <article class="info-card"><span class="number">02</span><div><h3>Total custom</h3><p>Inventario, target, staff, garage, veicoli, menu e sistemi principali sviluppati per RRP.</p></div><footer><span>TECNOLOGIA</span><span>→</span></footer></article>
+      <article class="info-card"><span class="number">03</span><div><h3>Roleplay serio</h3><p>Regole chiare, conseguenze reali e strumenti pensati per favorire scene lunghe e credibili.</p></div><footer><span>QUALITÀ</span><span>→</span></footer></article>
+      <article class="info-card"><span class="number">04</span><div><h3>Economia controllata</h3><p>Progressione, lavori e attività costruiti per evitare inflazione e ricompense senza valore.</p></div><footer><span>ECONOMIA</span><span>→</span></footer></article>
+      <article class="info-card"><span class="number">05</span><div><h3>Community centrale</h3><p>Lo sviluppo nasce dall’ascolto dei giocatori e dalla costruzione di una comunità stabile.</p></div><footer><span>COMMUNITY</span><span>→</span></footer></article>
+      <article class="info-card"><span class="number">06</span><div><h3>Evoluzione continua</h3><p>Nuove funzioni, ottimizzazione e contenuti vengono integrati mantenendo coerenza e stabilità.</p></div><footer><span>SVILUPPO</span><span>→</span></footer></article>
+    </div>
+  </section>
+</main>
+<div class="page-index"><b>02</b> / 05</div>
+</div>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/site.js"></script>
+</body></html>

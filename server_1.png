@@ -1,33 +1,20 @@
+RRP WEBSITE ROMA V1 — VERIFICA FINALE
 
-document.addEventListener("DOMContentLoaded",()=>{
-  requestAnimationFrame(()=>document.body.classList.add("page-ready"));
+[OK] JavaScript valido: assets/js/site.js
+[OK] JavaScript valido: assets/js/config.js
+[OK] CSS analizzato senza errori di parsing
+[OK] Cinque pagine HTML presenti
+[OK] Tutti i collegamenti locali puntano a file esistenti
+[OK] Nessun ID HTML duplicato
+[OK] Immagini PNG integre
+[OK] Skyline SVG valido
+[OK] Pulsante FiveM collegato a RRP_CONFIG.connect
+[OK] Link segnaposto disattivati automaticamente
+[OK] Layout responsive aggiunto per tablet e smartphone
+[OK] Accessibilità migliorata nella sezione regolamento
+[OK] Preferenza movimento ridotto supportata
+[OK] Cartella discord_setup inclusa
 
-  document.querySelectorAll("a[data-transition]").forEach(link=>{
-    link.addEventListener("click",event=>{
-      const href=link.getAttribute("href");
-      if(!href||href.startsWith("#")||href.startsWith("http"))return;
-      event.preventDefault();
-      document.body.classList.add("page-leaving");
-      setTimeout(()=>window.location.href=href,260);
-    });
-  });
-
-  const ruleButtons=[...document.querySelectorAll(".rule-button")];
-  const ruleContents=[...document.querySelectorAll(".rule-content")];
-  ruleButtons.forEach(button=>{
-    button.addEventListener("click",()=>{
-      const target=button.dataset.rule;
-      ruleButtons.forEach(b=>b.classList.toggle("active",b===button));
-      ruleContents.forEach(panel=>panel.classList.toggle("active",panel.id===target));
-    });
-  });
-
-  const parallax=document.querySelector(".city-card");
-  if(parallax){
-    window.addEventListener("mousemove",event=>{
-      const x=(event.clientX/window.innerWidth-.5)*8;
-      const y=(event.clientY/window.innerHeight-.5)*8;
-      parallax.style.transform=`translate3d(${x}px,${y}px,0)`;
-    });
-  }
-});
+NOTA
+I link reali Discord e FiveM devono essere inseriti manualmente in:
+assets/js/config.js
